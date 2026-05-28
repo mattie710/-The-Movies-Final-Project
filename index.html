@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0317ccbb39.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav content-wrapper">
+            <div class="logo">
+                <img src="/assets/movie-photo.jpeg" class="logo">
+            </div>
+            <div class="links">
+                <a href="" class="link
+                 link__hover-effect
+                 link__hover-effect--black">
+                    HOME
+                </a>
+                <a href="" class="link 
+                 link__hover-effect
+                 link__hover-effect--black">
+                    FIND A MOVIE
+                </a>
+                <a class="btn-contact">CONTACT</a>
+            </div>
+        </div>
+        <div id="phone-nav">
+            <button class="btn__menu bento-menu show-sm" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="showMenu show-sm show-anim-out">
+                <button class="btn__menu close-btn" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <a href="" class="link 
+                 link__hover-effect
+                 link__hover-effect--black"  onclick="closeMenu()">
+                    HOME
+                </a>
+                <a href="" class="link 
+                 link__hover-effect
+                 link__hover-effect--black"  onclick="closeMenu()">
+                    FIND A MOVIE
+                </a>
+                <a class="btn-contact"  onclick="closeMenu()">
+                    CONTACT
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="landing-page">
+        <div class="main-page">
+            <div class="" style="z-index: 10;">
+                <div class="">
+                    <div class="">
+                        <h1>America's best site for <span class="gold">Movie Listings</span></h1>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="h2-wrapper">
+                        <h2>Find Your Next Cinamatic Expeance with 
+                            <span class="gold">The Movies</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="input-section">
+                    <div class="">
+                        <div class="input-wrapper">
+                            <input class="search__bar" type="text" placeholder="Search Your Faverate Movies">
+                            <button id="searchBtn" class="search-button">
+                                <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+                                <i id="icon2" class="fa-duotone fa-solid fa-spinner" style="display: none;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/movie reel img.jpg" class="movie-reel" alt="">
+        </div>
+        <div class="reel-wrapper">
+            <div id="reel" class="reel-img">
+                <img src="./assets/movie-reel.svg.med.png" class="rolling-image" alt="Movie Reel">
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

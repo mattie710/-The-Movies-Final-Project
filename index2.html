@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://kit.fontawesome.com/0317ccbb39.js" crossorigin="anonymous"></script>
+  <script src="index2.js" defer></script>
+  <title>Movie Titles</title>
+</head>
+<body> 
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <img class="logo" src="./assets/movie-photo.jpeg" alt="">
+        <ul class="nav__links">
+           <li><a href="#" class="nav__link">Home</a></li>
+           <li><a href="#" class="nav__link no-cursor">Movies</a></li>
+           <li><a href="#features" class="nav__link nav__link--primary">Contact</a></li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu__links"> 
+              <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+              <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Books</a></li>
+              <li class="menu__list"><a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="header__container">
+        <div class="header__discription">
+            <h1>America's most awarded online <span class="red">Movie</span> platform</h1>
+            <h2>Discover thousands of movies and trailers with <span class="red">The Movies</span></h2>
+            <a href="#features">
+                <button class="btn">Browse Movies</button>
+            </a>    
+        </div>
+        <figure class="header__img__wrapper">
+            <img src="./assets/movie reel img.jpg" class="background-img" alt="">
+        </figure>
+      </div>
+    </header>  
+  </section>
+  <div class="films__header">
+      <h2 class="section__title films__header--title">All <span class="red">Movies</span></h2>
+      <select id="filter" onchange="filterFilms(event)">
+          <option value="" disabled selected>Sort</option>
+          <option value="A_to_Z">Title: A to Z</option>
+          <option value="Z_to_A">Title: Z to A</option>
+          <option value="Newest_to_Oldest">Price: Newest to Oldest</option>
+          <option value="Oldest_to_Newest">Price: Oldest to Newest</option>
+      </select>
+  </div>   
+  <div class="container">
+    <div class="row">
+      <div class="film-list">
+        <div class="film-card">
+          <div class="film-card__container">
+            <h3>Film Title</h3>
+              <img id="moviePoster" src="" alt="">
+              <script src="index2.js"></script>
+              <p><b>Genre:</b> Director</p>
+              <p><b>Actors:</b> Actors</p>
+              <p><b>Released:</b> Year</p>
+              <p><b>imdbRating:</b> Rating</p>
+              <p><b>Website:</b> <a href="https://website.website" target="_blank">website.website</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <section id="footer">
+      <div class="container">
+          <div class="row">
+            <a href="#">
+              <figure class="footer__logo">
+                <img src="./assets/movie-photo.jpeg" class="footer__logo--img" alt="">
+              </figure>
+            </a>
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link no-cursor">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link no-cursor">About</a>
+                </li>
+                <li>
+                    <a href="#features" class="footer__link no-cursor">Books</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link no-cursor">Contact</a>
+                </li>
+            </ul>
+            <p class="footer__text">© 2024 Library. All rights reserved.</p>
+          </div>
+      </div>
+    </section>
+  </footer>
+</body>
+<script src="index2.js"></script>
+
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../HTML CRASH COURSE/Tutorial Exclusive Eportfolio"
+		},
+		{
+			"path": "../HTML CRASH COURSE/Contact Cards"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Final Project"
+	}
+}
